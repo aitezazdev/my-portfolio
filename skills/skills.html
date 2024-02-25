@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>skills</title>
+    <style>
+        table, tr, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <ul>
@@ -13,13 +19,36 @@
     </ul>
 
     <h1>Skills</h1>
-    
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>C++</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>Skill Category</th>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td  rowspan="3">Programming</td>
+                <td>C++</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>    
+                <td>Python</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Design Tools</td>
+                <td>Figma</td>
+                <td>Beginner</td>
+              </tr>
+        </tbody>
+    </table>
+      
 
 </body>
 </html>
