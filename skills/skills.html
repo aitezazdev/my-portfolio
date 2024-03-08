@@ -46,9 +46,48 @@
                 <td>Figma</td>
                 <td>Beginner</td>
               </tr>
+            <tr>
+                <td rowspan="3">Web</td>
+                <td>HTML</td>
+                <td>Advanced</td>
+              </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Advanced</td>
+              </tr>
+            <tr>
+                <td>JS</td>
+                <td>Intermediate</td>
+              </tr>
         </tbody>
-    </table>
+    </table><br>
       
+
+    <h2>Skill Assessment Form</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" required><br>
+
+        <label for="skill">Skill to Assess:</label><br>
+        <input type="text" name="skill" required><br><br>
+
+        <label for="level">Proficiency Level:</label><br>
+        <select name="level" required>
+            <option disabled selected>Select Skill</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea name="comments" rows="4"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
 
 </body>
 </html>
