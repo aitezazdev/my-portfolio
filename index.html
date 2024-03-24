@@ -4,36 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
-    <style>
-        table, tr, th, td{
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        #ul{
-          display: flex;
-          list-style-type: none;
-          justify-content: space-around;
-          font-size: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-  <nav>
-    <ul id="ul">
+  <nav id="navbar">
+    <ul class="nav-links">
         <li><a href="./contact/contact.html">Contact</a></li>
         <li><a href="./projects/projects.html">Projects</a></li>
         <li><a href="./skills/skills.html">Skills</a></li>
     </ul>
 </nav>
-<hr>
 
 <main>
     <img src="./images/pic.jpg" alt="Profile Picture" width="80">
     
-    <section>
+    <section id="intro">
+        <div id="name">        
         <h1>Aitezaz Sikandar - Web Developer</h1>
+        <img id="voice" src="./images/sound-icon.png" alt="sound-icon picture">
+        </div>
         <p>I'm Aitezaz Sikandar, currently pursuing my academic journey at the University of Peshawar with a focus on web development.</p>
         <blockquote>
             As I traverse my academic program, I'm also honing my skills through a comprehensive web development course at Saylani. I'm actively engaged in exploring various avenues of technology and seeking opportunities to expand my knowledge and expertise.
@@ -89,6 +79,15 @@
     <p>&copy; <a href="https://github.com/aitezazdev" target="_blank">aitezazdev</a> | All rights reserved</p>
 </footer>
 
+    <script>
+        let audio = new Audio("./audio/voice.mp3");
 
+        function playVoice(){
+            audio.play();
+        }
+
+        let speaker = document.querySelector("#voice");
+        speaker.addEventListener("click", playVoice);
+    </script>
 </body>
 </html>

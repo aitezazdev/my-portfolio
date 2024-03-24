@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    background-color: black;
+}
+
+.nav-links{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#name{
+    display: flex;
+    align-items: center;
+}
+
+#name > img {
+    height: 25px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+section{
+    margin: 20px 0;
+}
